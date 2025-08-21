@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 <h1>Animals</h1>
-<a href="?url=animal/create">Add New Animal</a>
+<a href="/animal/create">Add New Animal</a>
 
 <table border="1" style="width:100%; margin-top: 20px; border-collapse: collapse;">
     <thead>
@@ -24,8 +24,8 @@
             <td style="padding: 8px;"><?= htmlspecialchars($animal['date_of_birth']) ?></td>
             <td style="padding: 8px;"><?= htmlspecialchars($animal['farm_name'] ?? 'N/A') ?></td>
             <td style="padding: 8px;">
-                <a href="?url=animal/edit/<?= $animal['id'] ?>">Edit</a>
-                <form action="?url=animal/destroy/<?= $animal['id'] ?>" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure?');">
+                <a href="/animal/edit/<?= $animal['id'] ?>">Edit</a>
+                <form action="/animal/destroy/<?= $animal['id'] ?>" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure?');">
                     <button type="submit">Delete</button>
                 </form>
             </td>

@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <h1>Edit Animal: <?= htmlspecialchars($animal['tag_number']) ?></h1>
 
-<form action="?url=animal/update/<?= $animal['id'] ?>" method="POST">
+<form action="/animal/update/<?= $animal['id'] ?>" method="POST">
     <div style="margin-bottom: 15px;">
         <label for="farm_id">Farm</label><br>
         <select id="farm_id" name="farm_id" required style="width: 300px; padding: 8px;">
@@ -40,7 +40,7 @@
     </div>
     <div>
         <button type="submit">Update Animal</button>
-        <a href="?url=animal/index">Cancel</a>
+        <a href="/animal/index">Cancel</a>
     </div>
 </form>
 

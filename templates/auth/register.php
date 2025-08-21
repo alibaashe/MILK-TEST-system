@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <h2>Register</h2>
-        <form action="?url=auth/processRegistration" method="POST">
+        <form action="/auth/processRegistration" method="POST">
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -45,7 +45,7 @@
                 <button type="submit">Register</button>
             </div>
         </form>
-        <p>Already have an account? <a href="?url=auth/login">Login here</a>.</p>
+        <p>Already have an account? <a href="/auth/login">Login here</a>.</p>
     </div>
 </body>
 </html>

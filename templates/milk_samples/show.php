@@ -12,7 +12,7 @@
 </style>
 
 <h1>Sample Details: <?= htmlspecialchars($sample['sample_code']) ?></h1>
-<a href="?url=milkSample/index">Back to List</a>
+<a href="/milkSample/index">Back to List</a>
 
 <div class="section">
     <h2>Sample Information</h2>
@@ -31,7 +31,7 @@
 <div class="section">
     <h2>Laboratory Test Results</h2>
     <?php if (in_array($_SESSION['user_role'], ['Admin', 'Lab Technician'])): ?>
-        <form action="?url=milkSample/storeLabTest/<?= $sample['id'] ?>" method="POST">
+        <form action="/milkSample/storeLabTest/<?= $sample['id'] ?>" method="POST">
             <div class="grid">
                 <div class="form-group">
                     <label for="ph">pH</label>
@@ -94,7 +94,7 @@
 <div class="section">
     <h2>Final Judgement</h2>
     <?php if (in_array($_SESSION['user_role'], ['Admin', 'Inspector'])): ?>
-        <form action="?url=milkSample/storeFinalJudgement/<?= $sample['id'] ?>" method="POST" enctype="multipart/form-data">
+        <form action="/milkSample/storeFinalJudgement/<?= $sample['id'] ?>" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="judgement">Judgement</label>
                 <select id="judgement" name="judgement" required>

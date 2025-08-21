@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <h1>Add Milk Sample</h1>
 
-<form action="?url=milkSample/store" method="POST">
+<form action="/milkSample/store" method="POST">
     <div style="margin-bottom: 15px;">
         <label for="sample_code">Sample Code</label><br>
         <input type="text" id="sample_code" name="sample_code" required style="width: 300px; padding: 8px;">
@@ -34,7 +34,7 @@
     </div>
     <div>
         <button type="submit">Save Sample</button>
-        <a href="?url=milkSample/index">Cancel</a>
+        <a href="/milkSample/index">Cancel</a>
     </div>
 </form>
 

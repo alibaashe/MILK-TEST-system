@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <h1>Add New Farm</h1>
 
-<form action="?url=farm/store" method="POST">
+<form action="/farm/store" method="POST">
     <div style="margin-bottom: 15px;">
         <label for="name">Farm Name</label><br>
         <input type="text" id="name" name="name" required style="width: 300px; padding: 8px;">
@@ -22,7 +22,7 @@
     </div>
     <div>
         <button type="submit">Save Farm</button>
-        <a href="?url=farm/index">Cancel</a>
+        <a href="/farm/index">Cancel</a>
     </div>
 </form>
 

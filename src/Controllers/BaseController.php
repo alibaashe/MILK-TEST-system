@@ -71,11 +71,7 @@ abstract class BaseController
      */
     protected function redirect(string $url): void
     {
-        // Adjust for our query string routing
-        if (strpos($url, '?') === false) {
-            $url = '?url=' . ltrim($url, '/');
-        }
-        header('Location: ' . $url, true, 303);
+        header('Location: /' . ltrim($url, '/'), true, 303);
         exit;
     }
 }

@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 <h1>Farms</h1>
-<a href="?url=farm/create">Add New Farm</a>
+<a href="/farm/create">Add New Farm</a>
 
 <table border="1" style="width:100%; margin-top: 20px; border-collapse: collapse;">
     <thead>
@@ -22,8 +22,8 @@
             <td style="padding: 8px;"><?= htmlspecialchars($farm['owner_name']) ?></td>
             <td style="padding: 8px;"><?= htmlspecialchars($farm['contact_number']) ?></td>
             <td style="padding: 8px;">
-                <a href="?url=farm/edit/<?= $farm['id'] ?>">Edit</a>
-                <form action="?url=farm/destroy/<?= $farm['id'] ?>" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure?');">
+                <a href="/farm/edit/<?= $farm['id'] ?>">Edit</a>
+                <form action="/farm/destroy/<?= $farm['id'] ?>" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure?');">
                     <button type="submit">Delete</button>
                 </form>
             </td>

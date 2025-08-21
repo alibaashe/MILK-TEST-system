@@ -24,7 +24,7 @@
             <td style="padding: 8px;"><?= htmlspecialchars($sample['farm_name']) ?></td>
             <td style="padding: 8px;"><?= htmlspecialchars($sample['status']) ?></td>
             <td style="padding: 8px;">
-                <a href="?url=milkSample/show/<?= $sample['id'] ?>">View Details</a>
+                <a href="/milkSample/show/<?= $sample['id'] ?>">View Details</a>
             </td>
         </tr>
         <?php endforeach; ?>

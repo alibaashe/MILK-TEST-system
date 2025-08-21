@@ -16,23 +16,23 @@
 <body>
     <nav>
         <div class="container">
-            <a href="?url=">Home</a>
+            <a href="/">Home</a>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a href="?url=dashboard">Dashboard</a>
+                <a href="/dashboard">Dashboard</a>
                 <?php if ($_SESSION['user_role'] === 'Admin'): ?>
-                    <a href="?url=farm/index">Manage Farms</a>
+                    <a href="/farm/index">Manage Farms</a>
                 <?php endif; ?>
                 <?php if (in_array($_SESSION['user_role'], ['Admin', 'Inspector'])): ?>
-                    <a href="?url=animal/index">Manage Animals</a>
+                    <a href="/animal/index">Manage Animals</a>
                 <?php endif; ?>
                 <?php if (in_array($_SESSION['user_role'], ['Admin', 'Inspector', 'Lab Technician'])): ?>
-                    <a href="?url=milkSample/index">Milk Samples</a>
+                    <a href="/milkSample/index">Milk Samples</a>
                 <?php endif; ?>
-                <a href="?url=report/index">Reports</a>
-                <a href="?url=auth/logout" style="float: right;">Logout</a>
+                <a href="/report/index">Reports</a>
+                <a href="/auth/logout" style="float: right;">Logout</a>
             <?php else: ?>
-                <a href="?url=auth/login">Login</a>
-                <a href="?url=auth/register">Register</a>
+                <a href="/auth/login">Login</a>
+                <a href="/auth/register">Register</a>
             <?php endif; ?>
         </div>
     </nav>

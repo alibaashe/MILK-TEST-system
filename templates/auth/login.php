@@ -20,7 +20,7 @@
         <?php if (isset($_GET['error'])): ?>
             <div class="error">Invalid email or password.</div>
         <?php endif; ?>
-        <form action="?url=auth/processLogin" method="POST">
+        <form action="/auth/processLogin" method="POST">
             <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -33,7 +33,7 @@
                 <button type="submit">Login</button>
             </div>
         </form>
-        <p>Don't have an account? <a href="?url=auth/register">Register here</a>.</p>
+        <p>Don't have an account? <a href="/auth/register">Register here</a>.</p>
     </div>
 </body>
 </html>

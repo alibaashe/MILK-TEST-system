@@ -12,6 +12,6 @@ class HomeController extends BaseController
         // For now, just a simple welcome message.
         // Later, we can render a proper home page view.
         echo "<h1>Welcome to the Milk Testing System</h1>";
-        echo "<p><a href='?url=auth/login'>Login</a> or <a href='?url=auth/register'>Register</a></p>";
+        echo "<p><a href='/auth/login'>Login</a> or <a href='/auth/register'>Register</a></p>";
     }
 }

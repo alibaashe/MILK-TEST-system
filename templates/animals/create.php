@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <h1>Add New Animal</h1>
 
-<form action="?url=animal/store" method="POST">
+<form action="/animal/store" method="POST">
     <div style="margin-bottom: 15px;">
         <label for="farm_id">Farm</label><br>
         <select id="farm_id" name="farm_id" required style="width: 300px; padding: 8px;">
@@ -38,7 +38,7 @@
     </div>
     <div>
         <button type="submit">Save Animal</button>
-        <a href="?url=animal/index">Cancel</a>
+        <a href="/animal/index">Cancel</a>
     </div>
 </form>
 
